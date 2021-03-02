@@ -1,0 +1,813 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-image: radial-gradient(rgb(250, 249, 248), rgb(245, 225, 192));
+  height: 100%;
+  text-align: center;
+}
+
+/*********Header Styling*********/
+header{
+  background-image: radial-gradient(rgb(243, 220, 194), rgb(248, 152, 8));
+            height: fit-content;
+}
+
+/*****Nav Menu*****/
+.nav-bar{
+    background-color: rgba(241, 214, 164, 0.952);
+    justify-content: space-between;
+    align-items: center;
+        display: flex;
+        padding: 0 8em;
+          width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-menu nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu nav ul li a{
+  text-decoration: none;
+  margin: 1.1em;
+  color: rgb(70, 3, 3);
+  transition: 0.5s;
+}
+
+.nav-menu nav ul li a:hover{
+  color: rgb(247, 82, 82);
+}
+
+.card{
+transition: 0.7s;
+}
+
+.card:hover{
+transform: translateX(0.5em);
+}
+
+/*-----Banner-----*/
+header .banner-container{
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.5em;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  height: 100%;
+  width: 80%;
+  font-size: 1.5em;
+}
+
+.banner-text{
+  padding-bottom: 9em;
+  padding-left: 5em;
+}
+
+.banner-text h1{
+margin-bottom: 0.5em;
+}
+
+.span{
+  margin: 1em 0;
+}
+
+@keyframes slider {
+  0%,10%, 30%{left: -100%;}
+  10%{left: -100%;}
+   20%{left: -100%;}
+  30%{left: -200%;}
+  100%, 30%{left: 0%;}
+}
+
+
+.banner-image{
+
+  position: relative;
+  width: 200%;
+  height: 100%;
+  animation: slider 40s infinite ;
+}
+
+.slider-container{
+  width: 40%;
+  margin: auto;
+  height: 600px;
+  overflow: hidden;
+
+}
+
+.img{
+  float: left; 
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.img img{
+height: 60%;
+}
+
+
+
+.btn{
+  margin-top: 1.5em;
+  
+}
+
+.btn a{
+  border: rgb(95, 16, 16) solid;
+  border-radius: 8px;
+  padding: 0.3em 0.4em;
+  text-decoration: none;
+  color: rgb(27, 4, 4);
+  transition: 0.5s;
+  font-size: 0.6em;
+  background-color: rgb(255, 101, 30);
+}
+
+.btn a:hover{
+  font-size: 0.57em;
+}
+/*******End Header Styling*******/
+
+/*******Featured Categories*******/
+
+.feature-categories-container{
+    width: 80%;
+   margin: auto;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 2.5em auto;
+  padding: 0.5em;
+}
+
+.title hr{
+  margin-top: 1.1em;
+  align-self: center;
+  width: 15%;
+  height: 0.2em;
+  border-color: rgb(226, 112, 77);
+  background-color:  rgb(226, 112, 77);
+}
+
+.feature-categories{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.1em;
+
+}
+
+  .col-3{
+  width: 100%;
+  height: 100%;
+  }
+
+  .col-3 img{
+    width: 500px;
+    height: auto;
+    }
+
+   #vase img{
+    width: 300px;
+    height: 600px;
+    }
+    
+/*******End Featured Categories*******/
+
+/*******Featured Products*******/
+
+.featured-products-container{
+  position: relative;
+  width: 70%;
+  margin: auto;
+  padding-top: 4em;
+}
+
+.feature-products{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4{
+  background-image: linear-gradient(180deg, rgb(245, 213, 199), rgb(247, 236, 231));
+  flex-basis: 30%;
+  text-align: center;
+  margin: 0.5em;
+  transition: 0.7s;
+}
+
+.col-4:hover{
+  transform: translateY(-0.6em);
+}
+.col-4 img{
+  width: 100%;
+}
+ 
+#product-vase img{
+    width: 200px;
+}
+.rating i{
+  color:rgb(241, 170, 89);
+}
+
+/*******End Featured Products*******/
+
+/*------Lates Product------*/
+
+.latest-products-container{
+  background-color: rgb(243, 235, 224);
+  height: 400px;
+  width: 70%;
+  margin: 2.5em auto 0;
+  padding: 1.5em;
+}
+
+  .latest-products{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    color: red;
+  }
+/*------End Lates Product------*/
+
+/*------Testimonials------*/
+
+/*--------Testimonial Slider--------*/
+
+@keyframes slide {
+   0%{left: 0%;}
+   10%{left: 0%;}
+   20%{left: -100%;}
+   30%{left: -100%;}
+   40%{left: -200%;}
+   50%{left: -200%;}
+   60%{left: -300%;}
+   70%{left: -300%;}
+   100%{left: 0%;}
+}
+
+/*--------End Testimonial Slider--------*/
+
+.testimonials-container{
+  width: 20%;
+  height: 500px;
+  margin: auto;
+  overflow:hidden;
+}
+
+.testimonials{
+  display: flex;
+  margin: 1.5em 0;
+  position: relative;
+  width: 400%;
+  height: 30%;
+  animation: slide infinite;
+  animation-duration: 15s;
+}
+
+.testimonial-items{
+  text-align: center;
+  padding: 1em;
+  margin-top: 0.5em;
+  transition: 0.3s;
+  float: left; 
+  width: 25%;
+  position: relative;
+  height: 100%;
+}
+
+.testimonial-items img{
+ width: 50%;
+ height: 80%;
+ margin-top: 0.9em;
+}
+
+
+
+/*------End Testimonials------*/
+
+
+
+/*------Footer-------*/
+footer{
+  background-color: rgb(15, 0, 0);
+  margin-bottom: 0;
+  padding: 0 1.5em;
+  color: white;
+  align-content: center;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.footer-container h2{
+  margin-top: 1.5em;
+  padding: 0.5em;
+
+}
+
+
+.footer-div{
+  display: flex;
+  justify-content: center;
+  margin: 0.6em;
+}
+
+footer a{
+  margin: 1.5em;
+  color: rgb(248, 220, 184);
+  font-size: 1.3em;
+  transition: 0.6s;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: rgb(7, 87, 161);
+}
+
+footer .footer-links{
+ transition: 0.6s;
+ 
+}
+
+footer .footer-links:hover{
+  transform: translateX(0.5em);
+}
+
+hr{
+  width: 100%;
+}
+
+footer p{
+  padding: 0.5em;
+}
+
+.mapouter{
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 400px;
+  margin: 0.5em;
+}
+  
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 400px;
+  margin: 0.5em;
+}
+
+/*------End footer-------*/
+
+/*------All Product Page Styling-------*/
+
+.title-sort{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+select{
+  padding: 0.5em;
+  border: rgb(238, 163, 113) solid;
+  background-color: inherit;
+  line-height: 0.5em;
+  cursor: pointer;
+}
+
+select:focus{
+outline: none;
+}
+
+.title2{
+  padding: 1.1em;
+}
+
+.allp-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allp-btn span{
+  margin: 0.5em;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  border: khaki solid;
+  cursor: pointer;
+}
+
+.allp-btn span:hover{
+background-color: khaki;
+color: white;
+}
+/*------End All Product Page Styling-------*/
+
+
+/*------Product Details Page Styling-------*/
+
+.col{
+  padding-top: 2.5em;
+    width: 80%;
+  margin: auto;
+}
+.details{
+  width: 30%;
+}
+
+.details-img{
+  margin: 1.5em;
+}
+
+.title3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.5em auto 0.5em ;
+  width: 75%;
+}
+
+.title3 a{
+text-decoration: none;
+color: rgb(241, 146, 21);
+
+}
+
+.img-galery{
+  display: flex;
+}
+.img-galery img{
+  width: 19%;
+  margin: 1.5em;
+  cursor: pointer;
+}
+
+.products-details{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.quantity{
+  padding: 1.5em 0;
+}
+.quantity h3{
+  padding: 0 0.5em 0 0em;
+}
+
+.quantity input{
+  padding: 0.5em;
+  margin: 0;
+  width: 100px;
+  border: rgb(228, 101, 17) solid;
+}
+
+.quantity input:focus{
+outline: none;
+}
+
+.btn-modi a{
+  font-size: 0.9em;
+}
+
+.btn-modi a:hover{
+  font-size: 0.85em;
+}
+
+.full-details{
+  width: 100%;
+  text-align: center;
+}
+
+
+/*------End Product Details Page Styling-------*/
+
+
+/*------About Us Page Styling-------*/
+
+main{
+  width: 70%;
+  margin: auto;
+}
+
+.mafriculture-imfor{
+  padding: 3em 1.5em 1.5em;
+  text-align: center;
+}
+
+.mafriculture-imfor h2{
+  padding: 1.5em 0.5em 0;
+}
+
+.mafriculture-imfor p{
+  padding: 1.5em;
+  line-height: 1.2em;
+  font-size: 1.5em;
+}
+
+.team-members{
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 70%;
+  margin: 2em auto;
+}
+
+.team-img{
+  width: 70%;
+}
+
+.member-details{
+  width: 40%;
+  margin: 2.5em;
+}
+
+/*------End About Us Page Styling-------*/
+
+/*-----------Card items Styling------------*/
+
+.card-items-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 70%;
+  margin: auto;
+  padding-top: 3.5em;
+}
+
+td{
+padding: 1em;
+}
+
+td:last-child{
+  text-align: right;
+}
+
+th:last-child{
+  text-align: right;
+}
+
+.card-items-container table tr td input{
+  width: 40%;
+  margin: 1.5em;
+}
+th{
+  background-color: rgb(248, 195, 125);
+  padding: 0.5em;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table{
+width: 450px;
+}
+
+/*-----------End Card items Styling------------*/
+
+@media (min-width: 660px) and (max-width: 1000px){
+
+/*-----Nav Menu-----*/
+  .nav-bar{
+        padding: 0 3em;
+  }
+
+  .nav-menu nav ul li a{
+    margin: 0.5em;
+  }
+    
+/*------MQ Banner------*/
+  header .banner-container{
+    flex-direction: column;
+    padding-top: 3.5em;
+    font-size: 1.5em;
+  }
+
+  .slider-container{
+    width: 70%;
+  }
+
+
+
+  
+/*-------MQ Feature Categories Styling-------*/
+    .col-3{
+    width: 100%;
+    }
+  
+    .col-3 img{
+      width: 100%;
+      height: auto;
+      }
+  
+     #vase img{
+      width: 65%;
+      height: auto;
+      }
+      
+/*-------MQ Feature Products Styling-------*/
+  #product-vase img{
+    width: 70%;
+  }
+
+  .featured-products-container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 4em;
+  }
+
+
+/*--------MQ Testimonials --------*/
+.testimonials-container{
+  width: 40%;
+  margin: auto;
+}
+
+}
+
+
+
+/*------Mobile MQ--------*/
+
+@media (max-width: 660px){
+
+/*-------MQ Nav Bar styling------*/
+.nav-bar{
+      padding: 0 0.5em;
+  }
+
+  
+  .nav-menu nav ul li a{
+    margin: 0.1rem;
+    padding: 0.3em;
+    font-size: 0.8em;
+  }
+
+  /*------MQ Banner------*/
+  header .banner-container{
+    flex-direction: column;
+    padding-top: 3.6em;
+    font-size: 0.9em;
+  }
+
+  .slider-container{
+    width: 100%;
+  }
+
+  /*-------MQ Feature Categories Styling-------*/
+  .feature-categories-container{
+    width: 80%;
+   margin: auto;
+  }
+
+  .feature-categories{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3{
+    width: 100%;
+    }
+  
+  .col-3 img{
+    width: 100%;
+    height: auto;
+    }
+
+    #vase img{
+    width: 65%;
+    height: auto;
+    }
+
+
+/*-------MQ Feature Products Styling-------*/
+  #product-vase img{
+    width: 60%;
+  }
+
+  .featured-products-container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 4em;
+  }
+
+  .feature-products{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-4 img{
+    width: 60%;
+    margin: 1.5em;
+  }
+  .col-4 {
+    padding: 1.3em;
+  }
+/*--------MQ Testimonials --------*/
+  .testimonials-container{
+    width: 60%;
+    margin: auto;
+    height: 450px;
+  }
+
+
+
+ /*-----------MQ Card items Styling------------*/
+
+  .card-items-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+    padding-top: 3.5em;
+  }
+
+  .card-items-container table tr td input{
+    width: 60%;
+    padding: 0.5em;
+  }
+
+
+  td{
+    padding: 0.2em;
+    }
+    
+    td:last-child{
+      text-align: right;
+    }
+    
+    th:last-child{
+      text-align: right;
+    }
+    
+    th{
+      background-color: rgb(248, 195, 125);
+      padding: 0.5em;
+    }
+    
+    .total-price{
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .total-price table{
+    width: 100%;
+  }
+
+/*-------MQ Footer-------*/
+.mapouter{
+  position: relative;
+  text-align: right;
+  height: 50%;
+  width: 100%;
+  margin: 0.5em;
+}
+  
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 100%;
+  margin: 0.5em;
+}
+
+
+}
