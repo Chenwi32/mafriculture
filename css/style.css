@@ -6,20 +6,20 @@
 
 
 body{
-  background-image: radial-gradient(rgb(250, 249, 248), rgb(245, 225, 192));
+  background-color: rgb(252, 252, 252);
   height: 100%;
   text-align: center;
 }
 
 /*********Header Styling*********/
 header{
-  background-image: radial-gradient(rgb(243, 220, 194), rgb(248, 152, 8));
+  background-color:  rgb(233, 172, 60);
             height: fit-content;
 }
 
 /*****Nav Menu*****/
 .nav-bar{
-    background-color: rgba(241, 214, 164, 0.952);
+    background-color: rgb(14, 13, 13);
     justify-content: space-between;
     align-items: center;
         display: flex;
@@ -37,7 +37,7 @@ header{
 .nav-menu nav ul li a{
   text-decoration: none;
   margin: 1.1em;
-  color: rgb(70, 3, 3);
+  color: rgb(255, 249, 249);
   transition: 0.5s;
 }
 
@@ -55,23 +55,29 @@ transform: translateX(0.5em);
 
 /*-----Banner-----*/
 header .banner-container{
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-top: 3.5em;
   text-align: center;
-  display: flex;
   margin: auto;
   height: 100%;
   width: 80%;
+  color: white;
   font-size: 1.5em;
 }
 
 .banner-text{
   padding-bottom: 9em;
-  padding-left: 5em;
+  padding-left: 2em;
+  rotate:  1 1 1 90deg;
 }
 
 .banner-text h1{
+margin-bottom: 0.5em;
+}
+
+.banner-text h2{
 margin-bottom: 0.5em;
 }
 
@@ -79,30 +85,10 @@ margin-bottom: 0.5em;
   margin: 1em 0;
 }
 
-@keyframes slider {
-  0%,10%, 30%{left: -100%;}
-  10%{left: -100%;}
-   20%{left: -100%;}
-  30%{left: -200%;}
-  100%, 30%{left: 0%;}
-}
-
-
 .banner-image{
-
-  position: relative;
-  width: 200%;
-  height: 100%;
-  animation: slider 40s infinite ;
-}
-
-.slider-container{
-  width: 40%;
-  margin: auto;
-  height: 600px;
-  overflow: hidden;
-
-}
+  width: 100%;
+  height: 70%;
+} 
 
 .img{
   float: left; 
@@ -202,7 +188,7 @@ height: 60%;
 }
 
 .col-4{
-  background-image: linear-gradient(180deg, rgb(245, 213, 199), rgb(247, 236, 231));
+  background-color:  rgb(248, 152, 8);
   flex-basis: 30%;
   text-align: center;
   margin: 0.5em;
@@ -228,7 +214,7 @@ height: 60%;
 /*------Lates Product------*/
 
 .latest-products-container{
-  background-color: rgb(243, 235, 224);
+  background-color: rgb(122, 118, 118);
   height: 400px;
   width: 70%;
   margin: 2.5em auto 0;
@@ -336,14 +322,14 @@ footer{
 
 footer a{
   margin: 1.5em;
-  color: rgb(248, 220, 184);
+  color: rgb(255, 255, 255);
   font-size: 1.3em;
   transition: 0.6s;
   text-decoration: none;
 }
 
 footer a:hover{
-  color: rgb(7, 87, 161);
+  color: rgb(101, 168, 231);
 }
 
 footer .footer-links{
@@ -361,6 +347,25 @@ hr{
 
 footer p{
   padding: 0.5em;
+}
+.ftBtn{
+  padding: 2.5em;
+
+}
+
+.ftBtn a{
+  color: white;
+  border: solid white;
+  border-radius: 15px;
+  padding: .5em;
+  transition: 0.7s;
+  font-size: 1em;
+}
+
+.ftBtn a:hover{
+  color: rgb(243, 143, 76);
+  border: solid rgb(238, 139, 81);
+  font-size: .95em;
 }
 
 .mapouter{
@@ -612,14 +617,10 @@ width: 450px;
     
 /*------MQ Banner------*/
   header .banner-container{
-    flex-direction: column;
     padding-top: 3.5em;
     font-size: 1.5em;
   }
 
-  .slider-container{
-    width: 70%;
-  }
 
 
 
