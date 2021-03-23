@@ -214,7 +214,7 @@ margin-bottom: 0.5em;
     width: 200px;
 }
 .rating i{
-  color:rgb(241, 170, 89);
+  color:rgb(241, 170, 89) !important;
 }
 
 /*******End Featured Products*******/
@@ -434,7 +434,7 @@ footer p{
 
 select{
   padding: 0.5em;
-  border: rgb(238, 163, 113) solid;
+  border: #9E6F99 solid;
   background-color: inherit;
   line-height: 0.5em;
   cursor: pointer;
@@ -458,13 +458,13 @@ outline: none;
   margin: 0.5em;
   padding: 0.5em 0.8em;
   text-align: center;
-  border: khaki solid;
+  border: solid #9E6F99;
   cursor: pointer;
 }
 
 .allp-btn span:hover{
-background-color: khaki;
-color: white;
+  background-color: #9E6F99;
+        color: #fdfcfd;
 }
 /*------End All Product Page Styling-------*/
 
@@ -494,7 +494,7 @@ color: white;
 
 .title3 a{
 text-decoration: none;
-color: rgb(241, 146, 21);
+color:  #9E6F99;
 
 }
 
@@ -526,7 +526,7 @@ color: rgb(241, 146, 21);
   padding: 0.5em;
   margin: 0;
   width: 100px;
-  border: rgb(228, 101, 17) solid;
+  border:  #9E6F99 solid;
 }
 
 .quantity input:focus{
@@ -603,6 +603,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: #f5e9f3;
   width: 70%;
   margin: auto;
   padding-top: 3.5em;
@@ -610,6 +611,7 @@ main{
 
 td{
 padding: 1em;
+
 }
 
 td:last-child{
@@ -625,7 +627,7 @@ th:last-child{
   margin: 1.5em;
 }
 th{
-  background-color: rgb(248, 195, 125);
+  background-color:  #9E6F99;
   padding: 0.5em;
 }
 
@@ -875,7 +877,7 @@ width: 450px;
     }
     
     th{
-      background-color: rgb(248, 195, 125);
+      background-color:  #9E6F99;
       padding: 0.5em;
     }
     
