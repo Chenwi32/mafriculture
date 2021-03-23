@@ -13,7 +13,7 @@ body{
 
 /*********Header Styling*********/
 header{
-  background-color:  rgb(233, 172, 60);
+  /* background-color:  #9E6F99; */
             height: fit-content;
 }
 
@@ -42,7 +42,7 @@ header{
 }
 
 .nav-menu nav ul li a:hover{
-  color: rgb(247, 82, 82);
+  color: #f5beef;
 }
 
 .card{
@@ -55,22 +55,31 @@ transform: translateX(0.5em);
 
 /*-----Banner-----*/
 header .banner-container{
-  display: flex;
-  justify-content: space-between;
+  background-color:  #9E6F99;
   align-items: center;
   padding-top: 3.5em;
   text-align: center;
-  margin: auto;
+  border: #9E6F99 solid;
+  border-radius: 16px;
   height: 100%;
-  width: 80%;
+  width: 100%;
   color: white;
   font-size: 1.5em;
+  transform: skewY(-3deg);
+}
+
+.skewY-adjsuter{ 
+  justify-content: space-between;
+  transform: skewY(3deg);
+  display: flex;
+  margin: auto;
+  width: 70%;
 }
 
 .banner-text{
   padding-bottom: 9em;
   padding-left: 2em;
-  rotate:  1 1 1 90deg;
+
 }
 
 .banner-text h1{
@@ -109,14 +118,14 @@ height: 60%;
 }
 
 .btn a{
-  border: rgb(95, 16, 16) solid;
+  border: rgb(10, 10, 10) solid;
   border-radius: 8px;
   padding: 0.3em 0.4em;
   text-decoration: none;
   color: rgb(27, 4, 4);
   transition: 0.5s;
   font-size: 0.6em;
-  background-color: rgb(255, 101, 30);
+  background-color: #ebcef7;
 }
 
 .btn a:hover{
@@ -129,6 +138,7 @@ height: 60%;
 .feature-categories-container{
     width: 80%;
    margin: auto;
+   padding: 0.5em;
 }
 
 .title{
@@ -138,6 +148,7 @@ height: 60%;
   text-align: center;
   margin: 2.5em auto;
   padding: 0.5em;
+  color: #9E6F99;
 }
 
 .title hr{
@@ -145,8 +156,8 @@ height: 60%;
   align-self: center;
   width: 15%;
   height: 0.2em;
-  border-color: rgb(226, 112, 77);
-  background-color:  rgb(226, 112, 77);
+  border-color: rgb(238, 218, 241);
+  background-color:  rgb(231, 208, 241);
 }
 
 .feature-categories{
@@ -188,11 +199,13 @@ height: 60%;
 }
 
 .col-4{
-  background-color:  rgb(248, 152, 8);
+  background-color: #f1dff5;
+  padding: 0.9em;
   flex-basis: 30%;
   text-align: center;
-  margin: 0.5em;
+  margin: 0.9em;
   transition: 0.7s;
+  color: #1a1819;
 }
 
 .col-4:hover{
@@ -214,11 +227,12 @@ height: 60%;
 /*------Lates Product------*/
 
 .latest-products-container{
-  background-color: rgb(122, 118, 118);
+  background-color: rgb(0, 0, 0);
   height: 400px;
   width: 70%;
   margin: 2.5em auto 0;
   padding: 1.5em;
+  color: white;
 }
 
   .latest-products{
@@ -246,6 +260,21 @@ height: 60%;
 }
 
 /*--------End Testimonial Slider--------*/
+
+.contaner{
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+    display: flex;
+    margin: 1.5em;
+}
+
+.contaner h2{
+  align-self: flex-end;
+  position: absolute;
+  margin-right: 2em;
+  margin-bottom: 0.5em;
+}
 
 .testimonials-container{
   width: 20%;
@@ -329,7 +358,7 @@ footer a{
 }
 
 footer a:hover{
-  color: rgb(101, 168, 231);
+  color:rgb(246, 193, 248);
 }
 
 footer .footer-links{
@@ -363,8 +392,8 @@ footer p{
 }
 
 .ftBtn a:hover{
-  color: rgb(243, 143, 76);
-  border: solid rgb(238, 139, 81);
+  color: rgb(246, 193, 248);
+  border: solid rgb(246, 193, 248);
   font-size: .95em;
 }
 
