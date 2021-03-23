@@ -110,7 +110,6 @@ margin-bottom: 0.5em;
 
 .btn{
   margin-top: 1.5em;
-  
 }
 
 .btn a{
@@ -359,7 +358,6 @@ footer a:hover{
 
 footer .footer-links{
  transition: 0.6s;
- 
 }
 
 footer .footer-links:hover{
@@ -410,6 +408,19 @@ footer p{
   margin: 0.5em;
 }
 
+.footerSubcontainer{
+  display: flex;
+}
+
+.footerSubcontainer h2 a{
+  border: solid white;
+  padding: 0 0.5em;
+}
+
+.footerSubcontainer h2 a:hover{
+  border: solid rgb(233, 191, 240);
+  padding: 0 0.5em;
+}
 /*------End footer-------*/
 
 /*------All Product Page Styling-------*/
@@ -703,6 +714,10 @@ width: 450px;
   margin: auto;
 }
 
+.footer-container{
+  width: 100%;
+}
+
 }
 
 
@@ -741,16 +756,36 @@ width: 450px;
 
   .banner-text{
     /* padding-bottom: 9em; */
-    font-size: 1.2em;
+    font-size: 1em;
     justify-self: center;
     padding-left: 2em;
+    margin-top: 2rem;
     position: absolute;
-    margin-top: 9rem;
     z-index: 1;
   }
   .banner-text p{
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
+
+  .ftBtn{
+    padding: .5em;
+  }
+  
+  .ftBtn a{
+    color: white;
+    border: solid white;
+    border-radius: 15px;
+    padding: .5em;
+    transition: 0.7s;
+    font-size: .7em;
+  }
+  
+  .ftBtn a:hover{
+    color: rgb(246, 193, 248);
+    border: solid rgb(246, 193, 248);
+    font-size: .6em;
+  }
+
   /*-------MQ Feature Categories Styling-------*/
   .feature-categories-container{
     width: 80%;
@@ -854,6 +889,11 @@ width: 450px;
   }
 
 /*-------MQ Footer-------*/
+
+.footer-container{
+  width: 100%;
+}
+
 .mapouter{
   position: relative;
   text-align: right;
@@ -862,6 +902,21 @@ width: 450px;
   margin: 0.5em;
 }
   
+footer a{
+  margin: 1.5em;
+  color: rgb(255, 255, 255);
+  font-size: .8em;
+  transition: 0.6s;
+  text-decoration: none;
+}
+
+.footerSubcontainer{
+  display: flex;
+}
+
+.footerSubcontainer p{
+  width: 95%;
+}
 
 .gmap_canvas {
   overflow: hidden;
