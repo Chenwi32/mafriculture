@@ -79,7 +79,6 @@ header .banner-container{
 .banner-text{
   padding-bottom: 9em;
   padding-left: 2em;
-
 }
 
 .banner-text h1{
@@ -650,8 +649,27 @@ width: 450px;
     font-size: 1.5em;
   }
 
+  .skewY-adjsuter{ 
+    justify-content: space-between;
+    transform: skewY(3deg);
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 70%;
+  }
 
-
+  .banner-text{
+    /* padding-bottom: 9em; */
+    font-size: 1.2em;
+    justify-self: center;
+    padding-left: 2em;
+    position: absolute;
+   margin-top: 1rem;
+    z-index: 1;
+  }
+  .banner-text p{
+    font-size: 1.4em;
+  }
 
   
 /*-------MQ Feature Categories Styling-------*/
@@ -715,10 +733,27 @@ width: 450px;
     font-size: 0.9em;
   }
 
-  .slider-container{
-    width: 100%;
+  .skewY-adjsuter{ 
+    justify-content: space-between;
+    transform: skewY(3deg);
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 70%;
   }
 
+  .banner-text{
+    /* padding-bottom: 9em; */
+    font-size: 1.2em;
+    justify-self: center;
+    padding-left: 2em;
+    position: absolute;
+    margin-top: 9rem;
+    z-index: 1;
+  }
+  .banner-text p{
+    font-size: 1.4em;
+  }
   /*-------MQ Feature Categories Styling-------*/
   .feature-categories-container{
     width: 80%;
