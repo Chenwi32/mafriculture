@@ -39,10 +39,14 @@ header{
   margin: 1.1em;
   color: rgb(255, 249, 249);
   transition: 0.5s;
+  padding: 0.3em;
 }
 
+.active,
 .nav-menu nav ul li a:hover{
   color: #f5beef;
+  border-bottom: solid  #fafafa;
+  
 }
 
 .card{
