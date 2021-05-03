@@ -1,8 +1,7 @@
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    overflow: auto;
-    padding: 0.8em;
+    overflow: visible;
 }
 
 .flex{
@@ -62,4 +61,98 @@
 
 .btn-dark{
     background-color: var(--dark-color);
+}
+
+
+/*----------Toggle Menu----------*/
+@media (max-width: 800px) {
+ 
+
+    .nav-bar-btn {
+        height: fit-content;
+        width: 50px;
+        padding: 0.2em 0.5em;
+        cursor: pointer;
+        border: 3px solid rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0.8em 0;
+    }
+
+    .nav-bar-btn .bar{
+        height: 3px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0.28em;
+        transition: all 0.5s ease;
+    }
+
+    .navbar-collapse{
+     display: none;
+     transition: 0.5s ease;
+    }
+
+    .change .bar1{
+        transform: rotate(-45deg) translate(-10px, 10px);
+        width: 100%;
+    }
+
+    .change .bar2{
+        opacity: 0;
+    }
+
+    .change .bar3{
+        transform: rotate(45deg) translate(-7px, -8px);
+        width: 100%;
+    }
+
+
+    /*----------Mobile menu display---------*/
+
+    nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        left: -2%;
+        top: 4.5em;
+        background-color: rgba(14, 13, 13, 0.96);
+        width: 65%;
+        height: 100vh;
+        text-align: left;
+        margin: 0;
+    }
+
+    .nav-bar .container .nav-logo{
+        margin-left: -4.5em;
+      }    
+
+    nav ul li{
+        margin: 1.5em 100% 0 .8em;
+        width: 90%; 
+        background-color: rgba(14, 13, 13, 0.898);
+        padding: 0.3em;
+    }
+    nav ul li a{
+        font-size: 1.1em;
+        padding: 0.5em 0.2em;
+        margin: 0;
+    }
+    
+    nav ul .card1{
+        padding: 0.5em 0;
+        width: 100%;
+    } 
+    
+}
+
+
+@media (max-width: 300px) {
+    nav ul{
+        width: 95%;
+    }
+    
 }

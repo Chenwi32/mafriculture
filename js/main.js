@@ -1,4 +1,4 @@
-let galeryImages = document.getElementById('Display');
+/* let galeryImages = document.getElementById('Display');
 let smallImages = document.getElementsByClassName('SmallImg');
 
 smallImages[0].onclick = function()
@@ -14,3 +14,60 @@ smallImages[2].onclick = function()
 {
     galeryImages.src = smallImages[2].src;
 }
+ */
+
+/*-------Toggle menu------*/
+
+
+
+function toggle(){
+    const btn = document.getElementById('btn')
+    const menu = document.querySelector('.nav-menu')
+
+    btn.addEventListener('click', () =>{
+        let value = menu.classList.contains('navbar-collapse')
+
+
+        // This checks if the navbar__collapse and change classes are added to 
+        // the menu ul if not it should add
+        if( value){
+            menu.classList.remove('navbar-collapse')
+            btn.classList.add('change')
+        }
+        else{
+            menu.classList.add('navbar-collapse')
+            
+            btn.classList.remove('change')
+        }
+    } )
+}
+
+
+
+function nextProducts(){
+    const productDisplay = document.getElementById('product-display');
+    const firstPage = document.getElementById('first-page');
+    const secondPage = document.getElementById('more-products');
+    const next = document.getElementById('next');
+
+    productDisplay.innerHTML = firstPage.innerHTML;
+
+    next.addEventListener('click', () => {
+
+        if(productDisplay.innerHTML === firstPage.innerHTML){
+
+           productDisplay.innerHTML = secondPage.innerHTML;
+        }
+
+        else{
+            productDisplay.innerHTML = firstPage.innerHTML;
+        } 
+    })
+
+
+}
+
+
+toggle()
+
+nextProducts()

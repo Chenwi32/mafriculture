@@ -7,33 +7,51 @@
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>All Products - MAfriculture</title>
+    <title>MAfriculture - All Products</title>
   </head>
 <body>
   
  <!-------Header Section------->
   <header>
-    <div class="nav-bar container">
-      <div class="nav-logo">
-        <a href="index.html"><img src="images/logo/MAClogo.png" alt="MAC logo" width="100px" height="45px"></a>
-      </div>
-      <div class="nav-menu">
-        <nav>
-          <ul>
-            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-            <li><a href="products.html" class="active">&#8471;Products</a></li>
-            <li><a href="about-us.html"><i class="fas fa-info"></i>About Us</a></li>
-            <li><a href="account.html">Account</a></li>
-            <div class="card1"><li><a href="card.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li></div>
-          </ul>
-        </nav>
-      </div>
-    </div>
+   
+    <div class="nav-bar">
+      <div class="container">  
+       <div class="nav-logo">
+         <a href="index.html"><img src="images/logo/MAClogo.png" alt="MAC logo" width="100px" height="45px"></a>
+       </div>
+
+
+       <div class="nav-menu navbar-collapse">
+         <nav>
+           <ul>
+             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+             <li class="active"><a href="products.html">&#8471;Products</a></li>
+             <li><a href="about-us.html"><i class="fas fa-info"></i>About Us</a></li>
+             <li><a href="account.html">Account</a></li>
+             <div class="card1"><li><a href="card.html"><i class="fa fa-shopping-cart fa-1x"></i></a></li></div>
+           </ul>
+         </nav>
+       </div>
+     
+
+       <!-----Toggle menu button-------->
+       <div class="nav-bar-btn" id="btn">
+         <div class="bar bar1"></div>
+         <div class="bar bar2"></div>
+         <div class="bar bar3"></div>
+       </div>
+       <!-----End Toggle menu button-------->
+       </div>
+     </div>
   </header>
 
 <!--------End Header-------->
 
 
+
+
+
+<!-------------Products-------------->
 <div class="featured-products-container container">
   <div class="title-sort">
   <div class="title2">
@@ -50,12 +68,16 @@
     </select>
   </div>
   </div>
-   <div class="feature-products">
+
+    <!----Products are displayed in this div---->
+    <div id="product-display" class="grid container"></div>
+
+  <div class="feature-products hide container" id="first-page">
 
     <div class="col-4">
       <a href="product-details.html"><img src="images/hot-designer-toghu-fashion-wear.png" alt=""></a>
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -67,7 +89,7 @@
     <div class="col-4">
       <img src="images/ankara-fabrics4.png" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -79,7 +101,7 @@
     <div class="col-4">
       <img src="images/exterior2.jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -91,7 +113,7 @@
     <div class="col-4" id="product-vase">
       <img src="images/flower-vase2.png" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -104,7 +126,7 @@
     <div class="col-4" id="product-vase">
       <img src="images/flower-vase1.png" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -117,7 +139,7 @@
     <div class="col-4" id="product-vase">
       <img src="images/flower-vase3.png" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -130,7 +152,7 @@
     <div class="col-4" >
       <img src="images/ankara-fabrics5.jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -143,7 +165,7 @@
     <div class="col-4" >
       <img src="images/exterior1.jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating" >
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -156,7 +178,7 @@
     <div class="col-4">
       <img src="images/starry-toghu-outfit-with-white-design-and-colorful-markings-.jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -169,7 +191,7 @@
     <div class="col-4" >
       <img src="images/exterior3.jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -182,7 +204,7 @@
     <div class="col-4" >
       <img src="images/toghu-elegance-hand-marked-toghu-party-dress (1).jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -195,7 +217,7 @@
     <div class="col-4" >
       <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
       <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating" style="color: rgb(241, 170, 89);">
+      <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -206,14 +228,143 @@
     </div>
 
   </div>
+
+  <div id="more-products" class="more-products hide grid">
+
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>
+    <div class="col-4" >
+      <img src="images/stunning-designer-toghu-dress-made-for-royalty.jpg" alt="">
+      <h3>Lorem, ipsum dolor.</h3>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>$55.5</p>
+    </div>    
+    
+  </div>
+
+
 </div>
+
+
 <div class="allp-btn container">
-<span>1</span>
-<span>2</span>
-<span>3</span>
-<span>4</span>
-<span>5</span>
-<span>&#10511;</span>
+<span id="btn1">1</span>
+<span id="btn2">2</span>
+<span id="btn3">3</span>
+<span id="btn4">4</span>
+<span id="btn5">5</span>
+<span id="next">&#10511;</span>
 </div>
 
 
@@ -240,15 +391,12 @@
         
         <div class="footer-links"><a href="https://www.instagram.com" class="insta">
           <i class="fab fa-instagram fa-2x"></i>
-          Instagram
         </a></div>
         <div class="footer-links"><a href="https://www.facebook.com"> 
           <i class="fab fa-facebook fa-2x"></i>
-          Facebook  
         </a></div>
         <div class="footer-links"><a href="https://wwww.twitter.com">
           <i class="fab fa-twitter fa-2x"></i>
-          Twitter
         </a>
         </div> 
       </div>
@@ -268,5 +416,6 @@
 
   <script src="js/jquery.3.5.1.js"></script>
   <script src="js/all.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

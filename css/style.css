@@ -4,9 +4,11 @@
   padding: 0;
 }
 
+
+
 img{
-  width: 100%;
-}
+  width: 98%;
+} 
 
 body{
   background-color: rgb(252, 252, 252);
@@ -16,20 +18,41 @@ body{
 
 /*********Header Styling*********/
 header{
-  /* background-color:  #9E6F99; */
-            height: fit-content;
+    height: fit-content;
+    width: 100%;
+  position: relative;    
 }
+
+
+
 
 /*****Nav Menu*****/
 .nav-bar{
-    background-color: rgb(14, 13, 13);
-    justify-content: space-between;
-    align-items: center;
-        display: flex;
-        padding: 0 8em;
-          width: 100%;
-    position: fixed;
-    z-index: 1;
+  background-color: rgb(14, 13, 13);
+/*    justify-content: space-between;
+       align-items: center;
+           display: flex;
+           padding: 0 8em; */
+              width: 100%;
+          position: fixed;
+           z-index: 1;
+           height: fit-content;
+/*            margin: auto; */
+}
+
+.nav-bar .container{
+  background-color: inherit;
+   justify-content: space-between;
+       align-items: center;
+           display: flex;
+           padding: 0 auto;
+             width: 100%;
+            margin: auto;
+}
+      
+.nav-bar .container .nav-logo a img{
+   width: 50%;
+  margin: 0;
 }
 
 .nav-menu nav ul{
@@ -37,19 +60,27 @@ header{
   list-style-type: none;
 }
 
+.nav-menu nav ul li{
+  height: fit-content;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+}
+
 .nav-menu nav ul li a{
   text-decoration: none;
-  margin: 1.1em;
   color: rgb(255, 249, 249);
   transition: 0.5s;
-  padding: 0.3em;
+  padding: 0.5em 0.5em;
 }
 
 .active,
-.nav-menu nav ul li a:hover{
-  color: #f5beef;
-  border-bottom: solid  #fafafa;
-  
+.nav-menu nav ul li:hover{
+  background-color: rgba(44, 42, 42, 0.912);
+}
+
+.nav__bar__btn{
+  display: none;
 }
 
 .card1{
@@ -84,6 +115,7 @@ header .banner-container{
 }
 
 .banner-text{
+  padding-top: 1.5em;
   padding-bottom: 9em;
   padding-left: 2em;
 }
@@ -190,7 +222,7 @@ margin-bottom: 0.5em;
 
 .featured-products-container{
   position: relative;
-  width: 70%;
+  width: 100%;
   margin: auto;
   padding-top: 4em;
 }
@@ -201,13 +233,12 @@ margin-bottom: 0.5em;
 }
 
 .col-4{
-  background-color: #f1dff5;
+  background-color: #f3f1f3d5;
   padding: 0.9em;
   flex-basis: 30%;
   text-align: center;
-  margin: 0.9em;
+  margin: 0.7em auto;
   transition: 0.7s;
-  color: #1a1819;
 }
 
 .col-4:hover{
@@ -220,7 +251,9 @@ margin-bottom: 0.5em;
 #product-vase img{
     width: 200px;
 }
-.rating i{
+
+.rating .fa-star-half-alt,
+.rating .fa-star{
   color:rgb(241, 170, 89) !important;
 }
 
@@ -447,6 +480,7 @@ select{
   cursor: pointer;
 }
 
+
 select:focus{
 outline: none;
 }
@@ -652,18 +686,14 @@ width: 450px;
 @media (min-width: 660px) and (max-width: 1000px){
 
 /*-----Nav Menu-----*/
-  .nav-bar{
-        padding: 0 3em;
+   .nav-bar{
+        padding: 0 1em;
   }
 
-  .nav-menu nav ul li a{
-    margin: 0.5em;
-  }
-    
 /*------MQ Banner------*/
   header .banner-container{
     padding-top: 3.5em;
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 
   .skewY-adjsuter{ 
@@ -735,24 +765,19 @@ width: 450px;
 
 @media (max-width: 660px){
 
-/*-------MQ Nav Bar styling------*/
-.nav-bar{
-      padding: 0 0.5em;
-  }
-
-  
-  .nav-menu nav ul li a{
-    margin: 0.1rem;
-    padding: 0.3em;
-    font-size: 0.8em;
+  .nav-bar{
+    padding: 0 1em;
   }
 
   /*------MQ Banner------*/
   header .banner-container{
     flex-direction: column;
     padding-top: 3.6em;
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
+
+
+
 
   .skewY-adjsuter{ 
     justify-content: space-between;
@@ -761,19 +786,26 @@ width: 450px;
     display: flex;
     margin: auto;
     width: 70%;
+    font-size: 1em;
   }
 
+  .skewY-adjsuter .img img{
+    width: 90%;
+  }
+  
+  
+
   .banner-text{
-    /* padding-bottom: 9em; */
-    font-size: 1em;
+    font-size: 0.8em;
     justify-self: center;
-    padding-left: 2em;
-    margin-top: 2rem;
+    padding-left: 0.5em;
+    margin: 2rem auto;
     position: absolute;
     z-index: 1;
+    width: 100%;
   }
   .banner-text p{
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .ftBtn{
@@ -839,7 +871,7 @@ width: 450px;
   }
 
   .col-4 img{
-    width: 60%;
+    width: 80%;
     margin: 1.5em;
   }
   .col-4 {
@@ -934,6 +966,8 @@ footer a{
   width: 100%;
   margin: 0.5em;
 }
+}
 
-
+.hide{
+  display: none;
 }
