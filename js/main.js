@@ -1,4 +1,5 @@
-/* let galeryImages = document.getElementById('Display');
+function productDetailsImgDisplay(){
+let galeryImages = document.getElementById('Display');
 let smallImages = document.getElementsByClassName('SmallImg');
 
 smallImages[0].onclick = function()
@@ -14,11 +15,10 @@ smallImages[2].onclick = function()
 {
     galeryImages.src = smallImages[2].src;
 }
- */
+}
+
 
 /*-------Toggle menu------*/
-
-
 
 function toggle(){
     const btn = document.getElementById('btn')
@@ -71,3 +71,4 @@ function nextProducts(){
 toggle()
 
 nextProducts()
+productDetailsImgDisplay()
