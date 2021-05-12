@@ -1,5 +1,5 @@
 .container{
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     overflow: visible;
 }
@@ -42,7 +42,7 @@
    display: inline-block;
    padding: 0.5em 1.2em;
    cursor: pointer;
-   background-color: var(--primary);
+   background-color: rgba(236, 31, 4, 0.829);
    color: white;
    border-radius: 10px;
    transition: 0.2s;
@@ -52,6 +52,7 @@
 
 .btn:hover{
     transform: scale(0.98);
+    background-color: rgb(236, 31, 4);
 }
 
 .btn-outline{
@@ -65,7 +66,7 @@
 
 
 /*----------Toggle Menu----------*/
-@media (max-width: 800px) {
+@media (max-width: 853px) {
  
 
     .nav-bar-btn {
@@ -113,28 +114,29 @@
     /*----------Mobile menu display---------*/
 
     nav ul{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        left: -2%;
-        top: 4.5em;
-        background-color: rgba(14, 13, 13, 0.96);
-        width: 65%;
-        height: 100vh;
-        text-align: left;
-        margin: 0;
+            position: fixed;
+             display: flex;
+      flex-direction: column;
+               float: left;
+                left: -2%;
+                 top: 4.5em;
+    background-color: rgba(14, 13, 13, 0.96);
+               width: 65%;
+              height: 100vh;
+          text-align: left;
+              margin: 0;
+        padding-left:  0.3em;
     }
 
     .nav-bar .container .nav-logo{
-        margin-left: -4.5em;
+        margin-left: -3.3em;
       }    
 
     nav ul li{
-        margin: 1.5em 100% 0 .8em;
-        width: 90%; 
-        background-color: rgba(14, 13, 13, 0.898);
-        padding: 0.3em;
+               margin: 1.5em 100% 0 .8em;
+                width: 90%; 
+     background-color: rgba(14, 13, 13, 0.898);
+              padding: 0.3em;
     }
     nav ul li a{
         font-size: 1.1em;
@@ -143,16 +145,21 @@
     }
     
     nav ul .card1{
-        padding: 0.5em 0;
-        width: 100%;
-    } 
+        padding: 0;
+          width: 100%;
+    }
+
+    .featured-products-container .title-sort{
+        padding-top: 3em;
+    }
     
 }
 
 
 @media (max-width: 300px) {
+
     nav ul{
-        width: 95%;
+      width: 95%;
     }
     
 }

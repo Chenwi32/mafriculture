@@ -18,7 +18,7 @@ smallImages[2].onclick = function()
 
 /*-------Toggle menu------*/
 
-
+function mafriculture(){
 
 function toggle(){
     const btn = document.getElementById('btn')
@@ -42,6 +42,7 @@ function toggle(){
     } )
 }
 
+toggle();
 
 
 function nextProducts(){
@@ -63,11 +64,14 @@ function nextProducts(){
             productDisplay.innerHTML = firstPage.innerHTML;
         } 
     })
+    }
 
-
+    nextProducts();
 }
 
+mafriculture();
 
-toggle()
 
-nextProducts()
+
+
+
