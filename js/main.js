@@ -17,8 +17,12 @@ smallImages[2].onclick = function()
 }
 }
 
+<<<<<<< HEAD
 
 /*-------Toggle menu------*/
+=======
+function mafriculture(){
+>>>>>>> 26a4281 (Changed the color theme, fixed footer layout issues, added a background image in the banner area with a blend mode)
 
 function toggle(){
     const btn = document.getElementById('btn')
@@ -42,6 +46,7 @@ function toggle(){
     } )
 }
 
+toggle();
 
 
 function nextProducts(){
@@ -63,12 +68,19 @@ function nextProducts(){
             productDisplay.innerHTML = firstPage.innerHTML;
         } 
     })
+    }
 
-
+    nextProducts();
 }
 
+mafriculture();
 
-toggle()
 
+
+
+
+<<<<<<< HEAD
 nextProducts()
 productDetailsImgDisplay()
+=======
+>>>>>>> 26a4281 (Changed the color theme, fixed footer layout issues, added a background image in the banner area with a blend mode)

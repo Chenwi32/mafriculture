@@ -1,66 +1,64 @@
 <!DOCTYPE html>
-    <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title> MAfriculture</title>
-  <link rel="icon" href="https://mafriculture.netlify.app//favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="https://mafriculture.netlify.app//favicon.ico" type="image/x-icon" />
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MAfriculture</title>
+    <link rel="icon" href="https://mafriculture.netlify.app//favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://mafriculture.netlify.app//favicon.ico" type="image/x-icon" />
+  </head>
 <body>
  <!-------Header Section------->
   <header>
-   
-      <div class="nav-bar">
-       <div class="container">  
+
+    <div class="nav-bar">
+      <div class="container">  
         <div class="nav-logo">
           <a href="index.html"><img src="images/logo/MAClogo.png" alt="MAC logo" width="100px" height="45px"></a>
         </div>
 
-
+      <!------ Navigation menu-->
         <div class="nav-menu navbar-collapse">
           <nav>
             <ul>
-              <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-              <li><a href="products.html">&#8471;Products</a></li>
-              <li><a href="about-us.html"><i class="fas fa-info"></i>About Us</a></li>
+              <li class="active"><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+              <li><a href="products.html">&#8471; Products</a></li>
+              <li><a href="about-us.html"><i class="fas fa-info"></i> About Us</a></li>
               <li><a href="account.html">Account</a></li>
-              <div class="card1"><li><a href="card.html"><i class="fa fa-shopping-cart fa-1x"></i></a></li></div>
+              <div class="card1"><li><a href="card.html"><i class="fas fa-shopping-cart fa-1x"></i></a></li></div>
             </ul>
           </nav>
         </div>
-      
+
 
         <!-----Toggle menu button-------->
-        <div class="nav-bar-btn" id="btn">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
-        <!-----End Toggle menu button-------->
-        </div>
+      <div class="nav-bar-btn" id="btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
       </div>
-      <!----Banner---->
-      <div class="banner-container">
-        <div class="container">
+      <!-----End Toggle menu button-------->
+      </div>
+    </div>
+    <!----Banner---->
+    <div class="banner-container">
+      <div class="container">
         <div class="skewY-adjsuter">
           <div class="banner-text">
-            <h1 id="backToTop"><strong>MAfriculture.</strong></h1>
-            <h2>There Is Beauty In Everything And African 
-              Fashion Is Never An Exception.</h2>
-
-            <p>
-              <h3>Give The African <br>Style A Try!</h3>
-              <br> <strong>“FEEL THE ROYALTY”</strong><br>
-              <div class="span"><strong><em>Your Satisfaction Our Priority!</em></strong></div>
+            <h1 id="backToTop">MAfriculture</h1>
+            <p>There Is Beauty In Everything.<br> 
+              And African Fashion Is Never An Exception.<br>
+              <strong>Give The African Style A Try!</strong>
             </p>
-            <div class="btn"><a href="products.html"><strong>SHOP NOW </strong>&#10511;</a></div>
+            <div id="animated-text"></div>
+              <span class="feel" id="feel"><strong>“FEEL THE ROYALTY”</strong></span>
+              <span class="priority" id="priority"><strong><em>Your Satisfaction, Our Priority!</em></strong></span>
+            <div class="btn"><a href="products.html"><strong>SHOP NOW</strong></a></div>
           </div>
-          <div class="img"><img src="images/flower-vase2.png" alt=""></div>
         </div>
       </div>
     </div>
@@ -74,8 +72,8 @@
         <h2>Featured Categories</h2>
         <hr>
       </div>
-      <div class="feature-categories">
-         <div class="col-3" id="vase">
+      <div class="feature-categories grid">
+         <div class="col-3">
           <img src="images/exterior1.jpg" alt="">
         </div>  
         <div class="col-3">
@@ -88,6 +86,7 @@
           <img src="images/ankara-fabrics4.png" alt="">
         </div>
     </div>
+    </div>
 <!------- End Feature Categories------->
 
 <!-------Feature Products------->
@@ -96,7 +95,7 @@
     <h2>Featured Products</h2>
     <hr>
   </div>
-  <div class="feature-products">
+  <div class="feature-products grid-3">
 
     <div class="col-4">
       <a href="product-details.html"><img src="images/hot-designer-toghu-fashion-wear.png" alt=""></a>
@@ -118,18 +117,6 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-      </div>
-      <p>$55.5</p>
-    </div>
-    <div class="col-4">
-      <img src="images/toghu-fashion-knee-level-colorful-toghu-dress.png" alt="">
-      <h3>Lorem, ipsum dolor.</h3>
-      <div class="rating">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
         <i class="far fa-star"></i>
       </div>
       <p>$55.5</p>
@@ -166,91 +153,113 @@
 
 
 <!-------Testimonails------->
-<div class="contaner ">
-  <h3>Testimonails---</h3>
-<div class="testimonials-container">  
-  <div class="testimonials">
-    <div class="testimonial-items">
-      &#x275D;<br>
-      <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Fugit praesentium voluptatibus commodi
-        ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
-        <img src="images/testimonial-imgs/Ann.png" alt="">
-        <h3 class="name">Ann</h3>
+  <div class="container">
+    <div class="title">
+      <h2>Testimonails</h2>
     </div>
+  <div class="testimonials-container">  
+    <div class="testimonials">
+      <div class="testimonial-items">
+        &#x275D;<br>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugit praesentium voluptatibus commodi
+          ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
+          <img src="images/testimonial-imgs/Ann.png" alt="">
+          <h3 class="name">Ann</h3>
+      </div>
 
-    <div class="testimonial-items">
-      &#x275D;<br>
-      <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Fugit praesentium voluptatibus commodi
-        ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
-        <img src="images/testimonial-imgs/Carine.jpg" alt="">
-        <h3 class="name">Carine</h3>
+      <div class="testimonial-items">
+        &#x275D;<br>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugit praesentium voluptatibus commodi
+          ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
+          <img src="images/testimonial-imgs/Carine.jpg" alt="">
+          <h3 class="name">Carine</h3>
+      </div>
+
+      <div class="testimonial-items">
+        &#x275D;<br>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugit praesentium voluptatibus commodi
+          ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
+          <img src="images/testimonial-imgs/Divine.jpg" alt="">
+          <h3 class="name">Divine</h3>
+      </div>
+
+      <div class="testimonial-items">
+        &#x275D;<br>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugit praesentium voluptatibus commodi
+          ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
+            <img src="images/testimonial-imgs/Editi.jpg" alt="">
+          <h3 class="name">Editi</h3>
+      </div>  
+    
     </div>
-
-    <div class="testimonial-items">
-      &#x275D;<br>
-      <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Fugit praesentium voluptatibus commodi
-        ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
-        <img src="images/testimonial-imgs/Divine.jpg" alt="">
-        <h3 class="name">Divine</h3>
+    
     </div>
-
-    <div class="testimonial-items">
-      &#x275D;<br>
-      <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Fugit praesentium voluptatibus commodi
-        ipsam quisquam ullam veritatis assumenda quis facere quas?</small><br>
-          <img src="images/testimonial-imgs/Editi.jpg" alt="">
-        <h3 class="name">Editi</h3>
-    </div>  
-   
   </div>
-   
-  </div>
-</div>
-<!------- End Testimonails------->
+  <!------- End Testimonails------->
 
 
-  <!--footer-->
+  <!-----Footer----->
   <footer>
-    <div class="footer-container container">
-      <h2>Our Main Office</h2>
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Yaounde%20damas&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" marginheight="0" marginwidth="0">
-          </iframe><a href="https://www.online-timer.net">timer</a><br>
-          <a href="https://www.embedgooglemap.net">how to embed a google map</a>
+    <div class="container">
+      <div class="footer-container">
+        <div class="office-location">
+          <h2>Our Main Office</h2>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Yaounde%20damas&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" marginheight="0" marginwidth="0">
+            </iframe><a href="https://www.online-timer.net">timer</a><br>
+            <a href="https://www.embedgooglemap.net">how to embed a google map</a>
+          </div>
         </div>
+        </div>
+
+        <div class="footer-social">
+          <h2>Follow US</h2>
+          <div class="footer-div">
+            <div class="footer-links">
+              <a href="https://www.instagram.com" class="insta">
+                <i class="fab fa-instagram fa-3x"></i>
+              </a>
+            </div>
+            <div class="footer-links">
+              <a href="https://www.facebook.com"> 
+                <i class="fab fa-facebook fa-3x"></i>
+              </a>
+            </div>
+            <div class="footer-links">
+              <a href="https://wwww.twitter.com">
+                <i class="fab fa-twitter fa-3x"></i>
+              </a>
+            </div>
+          </div> 
+        </div>
+
+        <div id="backToBottom" class="ftBtn">
+          <button><a href="products.html">SHOP NOW&#10511;</a></button>
+          <a href="about-us.html">Find out more</a>
+          <a href="account.html">Create an account</a>
+        </div>
+        <br>
       </div>
-      <h2>Follow US</h2>
-      <div class="footer-div">
-        
-        <div class="footer-links"><a href="http://instagram.com" class="insta">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a></div>
-        <div class="footer-links"><a href="http://facebook.com"> 
-          <i class="fab fa-facebook fa-2x"></i>
-        </a></div>
-        <div class="footer-links"><a href="http://wwww.twitter.com">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        </div>
+        <hr>
       
-      </div>
-       <div class="ftBtn"><a href="products.html">SHOP NOW&#10511;</a></div>
-       <br>
-      <hr>
-      <div class="footerSubcontainer">
-      <p> &copy; Copyright 2021. MAFriculture Company | All rights reserved.</p>       
-       <h2> <a href="#backToTop">^</a></h2>
-      </div>
+        <div class="footerSubcontainer">
+          <p> &copy; Copyright 2021. MAFriculture Company | All rights reserved.</p>       
+          <span><a href="#backToTop">^</a></span>
+          <span id="down-btn"><a href="#backToBottom">V</a></span>
+        </div>
     </div>
   </footer>
+  <!------End Footer------->
+
 
   <script src="js/jquery.3.5.1.js"></script>
   <script src="js/all.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/bannerTextAnimate.js"></script>
 </body>
 </html>
