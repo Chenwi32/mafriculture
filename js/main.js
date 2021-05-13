@@ -1,4 +1,5 @@
-/* let galeryImages = document.getElementById('Display');
+/* function productDetailsImgDisplay(){
+let galeryImages = document.getElementById('Display');
 let smallImages = document.getElementsByClassName('SmallImg');
 
 smallImages[0].onclick = function()
@@ -14,11 +15,14 @@ smallImages[2].onclick = function()
 {
     galeryImages.src = smallImages[2].src;
 }
- */
+} */
 
-/*-------Toggle menu------*/
+
 
 function mafriculture(){
+
+
+    /*-------Toggle menu------*/
 
 function toggle(){
     const btn = document.getElementById('btn')
@@ -45,6 +49,7 @@ function toggle(){
 toggle();
 
 
+/*------- Product display function for the product page*/
 function nextProducts(){
     const productDisplay = document.getElementById('product-display');
     const firstPage = document.getElementById('first-page');
@@ -70,7 +75,6 @@ function nextProducts(){
 }
 
 mafriculture();
-
 
 
 
