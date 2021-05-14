@@ -1,104 +1,109 @@
 .container{
     max-width: 1280px;
-    margin: 0 auto;
-    overflow: visible;
+       margin: 0 auto;
+     overflow: visible;
 }
 
 .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+          display: flex;
+  justify-content: space-between;
+      align-items: center;
+           height: 100%;
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5em;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+                display: grid;
+  grid-template-columns: repeat(2, 1fr);
+               grid-gap: 1.5em;
+        justify-content: center;
+            align-items: center;
+                 height: 100%;
 }
 
 .grid-3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5em;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+                display: grid;
+  grid-template-columns: repeat(3, 1fr);
+               grid-gap: 1.5em;
+        justify-content: center;
+            align-items: center;
+                 height: 100%;
 }
 
 .card{
-    background-color: white;
-    border-radius: 10px;
-    padding: 1.5em;
-    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.7);
-    margin: 1.5em;
-    color: #333;
+  background-color: white;
+     border-radius: 10px;
+           padding: 0.5em;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, 0.7);
+            margin: 1.5em;
+             color: #333;
+            height: 100%;
+}
+
+.card2{
+     border: 1px rgba(236, 31, 4, 0.479) solid;
+    padding: 0.5em;
 }
 
 .btn{
-   display: inline-block;
-   padding: 0.5em 1.2em;
-   cursor: pointer;
-   background-color: rgba(236, 31, 4, 0.829);
-   color: white;
-   border-radius: 10px;
-   transition: 0.2s;
-   outline: none;
+           display: inline-block;
+           padding: 0.5em 1.2em;
+            cursor: pointer;
+  background-color: rgba(236, 31, 4, 0.829);
+             color: white;
+     border-radius: 10px;
+        transition: 0.2s;
+           outline: none;
    text-decoration: none;
 }
 
 .btn:hover{
-    transform: scale(0.98);
-    background-color: rgb(236, 31, 4);
+         transform: scale(0.98);
+  background-color: rgb(236, 31, 4);
 }
 
 .btn-outline{
-    text-decoration: none;
-    border: solid white;
+  text-decoration: none;
+           border: solid white;
 }
 
 .btn-dark{
-    background-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 
 
 /*----------Toggle Menu----------*/
 @media (max-width: 853px) {
  
-
     .nav-bar-btn {
-        height: fit-content;
-        width: 50px;
-        padding: 0.2em 0.5em;
-        cursor: pointer;
-        border: 3px solid rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin: 0.8em 0;
+               height: fit-content;
+                width: 50px;
+              padding: 0.2em 0.5em;
+               cursor: pointer;
+               border: 3px solid rgb(255, 255, 255);
+              display: flex;
+       flex-direction: column;
+      justify-content: center;
+          align-items: center;
+             position: relative;
+               margin: 0.8em 0;
     }
 
     .nav-bar-btn .bar{
-        height: 3px;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        margin: 0.28em;
-        transition: all 0.5s ease;
+                height: 3px;
+                 width: 100%;
+      background-color: rgb(255, 255, 255);
+                margin: 0.28em;
+            transition: all 0.5s ease;
     }
 
     .navbar-collapse{
-     display: none;
+        display: none;
      transition: 0.5s ease;
     }
 
     .change .bar1{
-        transform: rotate(-45deg) translate(-10px, 10px);
-        width: 100%;
+      transform: rotate(-45deg) translate(-10px, 10px);
+          width: 100%;
     }
 
     .change .bar2{
@@ -106,8 +111,8 @@
     }
 
     .change .bar3{
-        transform: rotate(45deg) translate(-7px, -8px);
-        width: 100%;
+      transform: rotate(45deg) translate(-7px, -8px);
+          width: 100%;
     }
 
 
@@ -140,8 +145,8 @@
     }
     nav ul li a{
         font-size: 1.1em;
-        padding: 0.5em 0.2em;
-        margin: 0;
+          padding: 0.5em 0.2em;
+           margin: 0;
     }
     
     nav ul .card1{

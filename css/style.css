@@ -230,20 +230,24 @@ header .banner-container{
 /*******Featured Products*******/
 
 .featured-products-container{
-     position: relative;
-        width: 100%;
-       margin: auto;
-  padding-top: 4em;
+  position: relative;
+     width: 100%;
+    margin: auto;
+   padding: 4em 6.5em 1.5em 7.5em;
 }
 
-/* .feature-products{
-
-} */
+.feature-products{
+  padding: 0 2.5em 0 2.5em;
+  margin: auto;
+} 
 
 .col-4{
+           display: flex;
+       align-items: center;
+   justify-content: center;    
+    flex-direction: column;
   background-color: #ffffffd5;
-           padding: 0.4em;
-        flex-basis: 30%;
+           padding: 0.8em;
         text-align: center;
             margin: 0.2em;
         transition: 0.7s;
@@ -254,7 +258,7 @@ header .banner-container{
 }
 
 .col-4 img{
-  width: 100%;
+  width: 99%;
 }
  
 #product-vase img{
@@ -411,6 +415,8 @@ footer p{
          display: flex;
   flex-direction: column;
          padding: 0.5em;
+     align-items: center;
+ justify-content: center;     
 }
 
 .ftBtn a{
@@ -494,7 +500,7 @@ footer p{
 
 select{
            padding: 0.5em;
-            border: #9E6F99 solid;
+            border: rgb(236, 31, 4) solid;
   background-color: inherit;
        line-height: 0.5em;
             cursor: pointer;
@@ -509,6 +515,7 @@ select:focus{
 }
 
 .allp-btn{
+          padding: 2.5em;
           display: flex;
   justify-content: center;
       align-items: center;
@@ -518,12 +525,12 @@ select:focus{
       margin: 0.5em;
      padding: 0.5em 0.8em;
   text-align: center;
-      border: solid #9E6F99;
+      border: solid rgb(236, 31, 4);
       cursor: pointer;
 }
 
 .allp-btn span:hover{
-  background-color: #9E6F99;
+  background-color: rgb(236, 31, 4);
              color: #fdfcfd;
 }
 /*------End All Product Page Styling-------*/
@@ -555,7 +562,7 @@ select:focus{
 
 .title3 a{
   text-decoration: none;
-            color:  #9E6F99;
+            color:  rgb(236, 31, 4);
 }
 
 .img-galery{
@@ -587,7 +594,7 @@ select:focus{
   padding: 0.5em;
    margin: 0;
     width: 100px;
-   border:  #9E6F99 solid;
+   border:  rgb(236, 31, 4) solid;
 }
 
 .quantity input:focus{
@@ -611,68 +618,45 @@ select:focus{
 /*------End Product Details Page Styling-------*/
 
 
-/*------About Us Page Styling-------*/
-
-main{
-   width: 70%;
-  margin: auto;
-}
-
-.mafriculture-imfor{
-     padding: 3em 1.5em 1.5em;
-  text-align: center;
-}
-
-.mafriculture-imfor h2{
-  padding: 1.5em 0.5em 0;
-}
-
-.mafriculture-imfor p{
-      padding: 1.5em;
-  line-height: 1.2em;
-    font-size: 1.5em;
-}
-
-.team-members{
-         display: flex;
-  flex-direction: column;
-}
-
-.team-member{
-  justify-content: center;
-      align-items: center;
-          display: flex;
-       text-align: center;
-            width: 70%;
-           margin: 2em auto;
-}
-
-.team-img{
-  width: 70%;
-}
-
-.member-details{
-   width: 40%;
-  margin: 2.5em;
-}
-/*------End About Us Page Styling-------*/
 
 
 /*-----------Card items Styling------------*/
 
 .card-items-container{
+   padding-top: 7em;     
+}
+
+.td-container{
+           height: 90%;
           display: flex;
    flex-direction: column;
   justify-content: flex-end;
- background-color: #f5e9f3;
+ background-color: rgba(236, 31, 4, 0.877);
             width: 70%;
-           margin: auto;
-      padding-top: 3.5em;
+           margin: 0 auto 3em;
+            color: white;
+          padding: 0.5em;
+        font-size: 1.5em;
+      font-family: sans-serif;     
 }
 
 td{
-  padding: 1em;
+  padding: 0.5em;
+}
 
+td input{
+           padding: 0.4em;
+  background-color: inherit;
+           outline: none;
+             color: white;
+         font-size: 1em; 
+            border: 1px solid white;  
+}
+
+td input:focus{
+  background-color: inherit;
+           outline: 2px white solid;
+ 
 }
 
 td:last-child{
@@ -688,7 +672,7 @@ th:last-child{
   margin: 1.5em;
 }
 th{
-  background-color:  #9E6F99;
+  background-color:  rgb(236, 31, 4);
            padding: 0.5em;
 }
 
@@ -878,7 +862,7 @@ th{
   }
   
   th{
-    background-color:  #9E6F99;
+    background-color:  rgb(236, 31, 4);
              padding: 0.5em;
   }
   

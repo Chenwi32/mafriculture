@@ -1,0 +1,46 @@
+
+/*------About Us Page Styling-------*/
+
+main{
+    width: 70%;
+   margin: auto;
+ }
+ 
+ .mafriculture-imfor{
+      padding: 5em 1.5em 1.5em;
+   text-align: center;
+ }
+ 
+ .mafriculture-imfor h2{
+   padding: 1.5em 0.5em 0;
+ }
+ 
+ .mafriculture-imfor p{
+       padding: 1.5em;
+   line-height: 1.2em;
+     font-size: 1.5em;
+ }
+ 
+ .team-members{
+          display: flex;
+   flex-direction: column;
+ }
+ 
+ .team-member{
+   justify-content: center;
+       align-items: center;
+           display: flex;
+        text-align: center;
+             width: 70%;
+            margin: 2em auto;
+ }
+ 
+ .team-img{
+   width: 70%;
+ }
+ 
+ .member-details{
+    width: 40%;
+   margin: 2.5em;
+ }
+ /*------End About Us Page Styling-------*/
