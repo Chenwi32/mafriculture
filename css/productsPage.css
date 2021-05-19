@@ -1,0 +1,46 @@
+.featured-products-container .title-sort{
+    padding-top: 3em;
+  }
+  
+  .title-sort{
+            display: flex;
+    justify-content: space-between;
+        align-items: center;
+            padding: 0.5em;
+  }
+  
+  select{
+             padding: 0.5em;
+              border: rgb(236, 31, 4) solid;
+    background-color: inherit;
+         line-height: 0.5em;
+              cursor: pointer;
+  }
+  
+  select:focus{
+    outline: none;
+  }
+  
+  .title2{
+    padding: 1.1em;
+  }
+  
+  .allp-btn{
+            padding: 2.5em;
+            display: flex;
+    justify-content: center;
+        align-items: center;
+  }
+  
+  .allp-btn span{
+        margin: 0.5em;
+       padding: 0.5em 0.8em;
+    text-align: center;
+        border: solid rgb(236, 31, 4);
+        cursor: pointer;
+  }
+  
+  .allp-btn span:hover{
+    background-color: rgb(236, 31, 4);
+               color: #fdfcfd;
+  }

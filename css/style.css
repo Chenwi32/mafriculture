@@ -146,7 +146,8 @@ header .banner-container{
 }
 
 .banner-text p{
-  font-size: 1.5em;  
+  padding-left: 3em;
+     font-size: 1.5em;  
 }
 
 .btn{
@@ -486,56 +487,6 @@ footer p{
 /*------End footer-------*/
 
 
-/*------All Product Page Styling-------*/
-.featured-products-container .title-sort{
-  padding-top: 3em;
-}
-
-.title-sort{
-          display: flex;
-  justify-content: space-between;
-      align-items: center;
-          padding: 0.5em;
-}
-
-select{
-           padding: 0.5em;
-            border: rgb(236, 31, 4) solid;
-  background-color: inherit;
-       line-height: 0.5em;
-            cursor: pointer;
-}
-
-select:focus{
-  outline: none;
-}
-
-.title2{
-  padding: 1.1em;
-}
-
-.allp-btn{
-          padding: 2.5em;
-          display: flex;
-  justify-content: center;
-      align-items: center;
-}
-
-.allp-btn span{
-      margin: 0.5em;
-     padding: 0.5em 0.8em;
-  text-align: center;
-      border: solid rgb(236, 31, 4);
-      cursor: pointer;
-}
-
-.allp-btn span:hover{
-  background-color: rgb(236, 31, 4);
-             color: #fdfcfd;
-}
-/*------End All Product Page Styling-------*/
-
-
 /*------Product Details Page Styling-------*/
 
 .col{
@@ -686,7 +637,9 @@ th{
 }
 /*-----------End Card items Styling------------*/
 
-
+/*------ Account page styling-------*/
+.account{min-height: 50vh;}
+/*------ Account page styling-------*/
 /*------ Mobile version------*/
 
 @media (min-width: 660px) and (max-width: 1000px){
@@ -922,6 +875,3 @@ th{
   }
 }
 
-.hide{
-  display: none;
-}
