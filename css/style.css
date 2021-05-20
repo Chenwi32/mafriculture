@@ -252,18 +252,16 @@ header .banner-container{
         text-align: center;
             margin: 0.2em;
         transition: 0.7s;
-      }
+}
 
 .col-4:hover{
   transform: translateY(-0.6em);
 }
 
 .col-4 img{
-  width: 99%;
-}
- 
-#product-vase img{
-    width: 200px;
+      width: 100%;
+  min-width: 150px;  
+ min-height: 300px;
 }
 
 .rating .fa-star-half-alt,
@@ -405,7 +403,8 @@ footer .footer-links a:hover{
 }
 
 hr{
-  width: 100%;
+  width: 98%;
+  margin: auto;
 }
 
 footer p{
@@ -487,159 +486,12 @@ footer p{
 /*------End footer-------*/
 
 
-/*------Product Details Page Styling-------*/
-
-.col{
-  padding-top: 2.5em;
-        width: 80%;
-       margin: auto;
-}
-
-.details{
-  width: 30%;
-}
-
-.details-img{
-  margin: 1.5em;
-}
-
-.title3{
-          display: flex;
-  justify-content: space-between;
-      align-items: center;
-           margin: 3.5em auto 0.5em ;
-            width: 75%;
-}
-
-.title3 a{
-  text-decoration: none;
-            color:  rgb(236, 31, 4);
-}
-
-.img-galery{
-  display: flex;
-}
-
-.img-galery img{
-   width: 19%;
-  margin: 1.5em;
-  cursor: pointer;
-}
-
-.products-details{
-            width: 100%;
-          display: flex;
-      align-items: center;
-  justify-content: center;
-}
-
-.quantity{
-  padding: 1.5em 0;
-}
-
-.quantity h3{
-  padding: 0 0.5em 0 0em;
-}
-
-.quantity input{
-  padding: 0.5em;
-   margin: 0;
-    width: 100px;
-   border:  rgb(236, 31, 4) solid;
-}
-
-.quantity input:focus{
-  outline: none;
-}
-
-.btn-modi a{
-  font-size: 0.9em;
-}
-
-.btn-modi a:hover{
-  font-size: 0.85em;
-}
-
-.full-details{
-  width: 100%;
-  text-align: center;
-}
-
-
-/*------End Product Details Page Styling-------*/
-
-
-
-
-/*-----------Card items Styling------------*/
-
-.card-items-container{
-   padding-top: 7em;     
-}
-
-.td-container{
-           height: 90%;
-          display: flex;
-   flex-direction: column;
-  justify-content: flex-end;
- background-color: rgba(236, 31, 4, 0.877);
-            width: 70%;
-           margin: 0 auto 3em;
-            color: white;
-          padding: 0.5em;
-        font-size: 1.5em;
-      font-family: sans-serif;     
-}
-
-td{
-  padding: 0.5em;
-}
-
-td input{
-           padding: 0.4em;
-  background-color: inherit;
-           outline: none;
-             color: white;
-         font-size: 1em; 
-            border: 1px solid white;  
-}
-
-td input:focus{
-  background-color: inherit;
-           outline: 2px white solid;
- 
-}
-
-td:last-child{
-  text-align: right;
-}
-
-th:last-child{
-  text-align: right;
-}
-
-.card-items-container table tr td input{
-   width: 40%;
-  margin: 1.5em;
-}
-th{
-  background-color:  rgb(236, 31, 4);
-           padding: 0.5em;
-}
-
-.total-price{
-          display: flex;
-  justify-content: flex-end;
-}
-
-.total-price table{
-  width: 450px;
-}
-/*-----------End Card items Styling------------*/
-
 /*------ Account page styling-------*/
 .account{min-height: 50vh;}
+
 /*------ Account page styling-------*/
+
+
 /*------ Mobile version------*/
 
 @media (min-width: 660px) and (max-width: 1000px){
@@ -672,16 +524,25 @@ th{
   }
 
   .featured-products-container{
-       position: relative;
-          width: 80%;
-         margin: auto;
-    padding-top: 4em;
+    position: relative;
+       width: 100%;
+      margin: auto;
+     padding: 4em 0.8em 1.5em 0.9em;
   }
 
+  .col-4{
+    padding: 0.8em;
+      width: 100%;
+  }
+
+  .col-4 img{
+         width: 90%;
+    min-height: 300px;
+  }
 
 /*--------MQ Testimonials --------*/
   .testimonials-container{
-    width: 70%;
+     width: 70%;
     margin: auto;
   }
 
@@ -764,16 +625,18 @@ th{
   .feature-products{
            display: flex;
     flex-direction: column;
+    padding-left: 0.7em;
+    padding-right: 0.8em;
   }
 
   .col-4 img{
-     width: 80%;
-    min-width: 100px;
-    margin: 1.5em;
+        width: 95%;
+        margin: auto;
   }
 
   .col-4{
-    padding: 1.3em;
+    padding: 0.5em;
+    width: 100%;
   }
 
 /*--------MQ Testimonials --------*/
