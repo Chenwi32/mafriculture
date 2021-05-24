@@ -67,6 +67,7 @@ header{
           padding: 0.8em;
       font-family: sans-serif;
         font-size: 1.2em;
+           cursor: pointer;
 }
 
 .active,
@@ -217,7 +218,7 @@ header .banner-container{
 .feature-categories .col-3{
    width: 100%;
   height: 100%;
-  margin: 0 1.5em;
+  margin: 0.5em 1.5em;
 }
 
 .col-3 img{
@@ -240,7 +241,7 @@ header .banner-container{
 .feature-products{
   padding: 0 2.5em 0 2.5em;
   margin: auto;
-} 
+}
 
 .col-4{
            display: flex;
@@ -248,7 +249,7 @@ header .banner-container{
    justify-content: center;    
     flex-direction: column;
   background-color: #ffffffd5;
-           padding: 0.8em;
+           padding: 0.5em;
         text-align: center;
             margin: 0.2em;
         transition: 0.7s;
@@ -345,6 +346,87 @@ header .banner-container{
      height: 200px;
 }
 /*------End Testimonials------*/
+
+
+/*------Cart display------*/
+
+/*-----------Cart items Styling------------*/
+
+.card-items-container{
+  padding-top: 7em;     
+}
+
+.td-container{
+          height: 100%;
+         display: flex;
+  flex-direction: column;
+ justify-content: flex-end;
+background-color: rgba(236, 31, 4, 0.877);
+           width: 70%;
+          margin: 0 auto 3em;
+           color: white;
+         padding: 0.5em;
+       font-size: 1.5em;
+     font-family: sans-serif;     
+}
+
+td{
+ padding: 0.5em;
+}
+
+td input{
+          padding: 0.4em;
+ background-color: inherit;
+          outline: none;
+            color: white;
+        font-size: 1em; 
+           border: 1px solid white;  
+}
+
+td input:focus{
+ background-color: inherit;
+          outline: 2px white solid;
+
+}
+
+td:last-child{
+ text-align: right;
+}
+
+th:last-child{
+ text-align: right;
+}
+
+.card-items-container table tr td input{
+  width: 40%;
+ margin: 1.5em;
+}
+th{
+ background-color:  rgb(236, 31, 4);
+          padding: 0.5em;
+}
+
+.total-price{
+         display: flex;
+ justify-content: flex-end;
+}
+
+.total-price table{
+ width: 450px;
+}
+
+.show{
+  position: fixed;
+  z-index: 100;
+  opacity: 1;
+}
+
+.hide{
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+}
+/*-----------End Cart items Styling------------*/
 
 
 /*------Footer-------*/
@@ -492,9 +574,9 @@ footer p{
 /*------ Account page styling-------*/
 
 
-/*------ Mobile version------*/
+/*------ Tablet version------*/
 
-@media (min-width: 660px) and (max-width: 1000px){
+@media (min-width: 660px) and (max-width: 800px){
 
 /*-----Nav Menu-----*/
    .nav-bar{
@@ -505,17 +587,25 @@ footer p{
   .banner-text p{
     font-size: 1.1em;
   }
-    header .banner-container{
- background-position: 60% 50%;    
+
+  header .banner-container{
+    background-position: 60% 50%;    
+  }
+
+  #animated-text{
+    margin-top: 1.5em;
+    font-weight: 500;
+    font-size: 1.4em;
+  }
+
+/*------- MQ Feature Categories Styling-------*/
+.col-3 img{
+  width: 100%;
+ height: 350px;
 }
 
-#animated-text{
-  margin-top: 1.5em;
-  font-weight: 500;
-  font-size: 1.4em;
-}
+/*------- End MQ Feature Categories Styling-------*/
 
-/*-------MQ Feature Categories Styling-------*/
  
     
 /*-------MQ Feature Products Styling-------*/
@@ -587,8 +677,9 @@ footer p{
   }
 
   .feature-categories{
-           display: flex;
-    flex-direction: column;
+            display: flex;
+    justify-content: space-evenly;
+     flex-direction: column;    
   }
 
   .col-3{
@@ -603,30 +694,28 @@ footer p{
 
 /*-------MQ Feature Products Styling-------*/
 
-.grid-3{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-
-  #product-vase img{
-    width: 60%;
+  .featured-products-container .grid-3{
+                display: grid;
+  grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+            align-items: center;
+                 height: 100%;
   }
 
   .featured-products-container{
-       position: relative;
-          width: 80%;
-         margin: auto;
-    padding-top: 4em;
+    position: relative;
+       width: 100%;
+      margin: auto;
+     padding: 4em 2.5em 1.5em 2.5em;
   }
 
   .feature-products{
-           display: flex;
-    flex-direction: column;
-    padding-left: 0.7em;
-    padding-right: 0.8em;
+    padding: 0 1.5em 0 1.5em;
+     margin: auto;
+  } 
+
+  #product-vase img{
+    width: 60%;
   }
 
   .col-4 img{
@@ -738,3 +827,16 @@ footer p{
   }
 }
 
+
+/*-------- Mobile Phone Version----------*/
+@media (max-width: 550px) {
+
+/* Featured Products */
+  .featured-products-container .grid-3{
+
+  grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+/*-------- End Mobile Phone Version----------*/
