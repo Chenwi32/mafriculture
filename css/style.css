@@ -147,7 +147,7 @@ header .banner-container{
 }
 
 .banner-text p{
-  padding-left: 3em;
+  padding-left: 2em;
      font-size: 1.5em;  
 }
 
@@ -192,7 +192,7 @@ header .banner-container{
 .title{
          display: flex;
   flex-direction: column;
-     line-height: 1.1em;
+     line-height: 1.7em;
       text-align: center;
           margin: 1.5em auto;
          padding: 0.5em;
@@ -204,10 +204,11 @@ header .banner-container{
 .title hr{
         margin-top: 1.1em;
         align-self: center;
-             width: 15%;
-            height: 0.2em;
+             width: 25%;
+            height: 0.11em;
       border-color: rgb(255, 76, 6);
   background-color: rgb(255, 76, 6);
+     border-radius: 45%;
 }
 
 .feature-categories{
@@ -454,9 +455,21 @@ footer{
   font-family: sans-serif;  
 }
 
+.footer-social{
+  margin: auto;
+   width: 20%;
+}
+
+.footer-div{
+          display: flex;
+  justify-content: space-evenly;
+           margin: 0.1em;
+}
+
 footer .footer-links{
        color: rgb(180, 173, 173);
   transition: 0.6s;
+      margin: 1em;
 }
 
 footer .footer-links:hover{
@@ -471,17 +484,6 @@ footer .footer-links a{
 footer .footer-links a:hover{
        color: rgb(255, 255, 255);
   transition: 0.6s;
-}
-
-.footer-social{
-  margin: 0;
-  width: 20%;
-}
-
-.footer-div{
-          display: flex;
-  justify-content: space-evenly;
-           margin: 0.1em;
 }
 
 hr{
@@ -551,14 +553,14 @@ footer p{
       color: rgb(158, 158, 158);
     padding: 0.2em 0.5em;
    position: fixed;
-        top: 15em;
-       left: 90%;
+        top: 80vh;
+       left: 85vw;
   font-size: 1.5em;
  transition: 0.5s;    
 }
 
 .footerSubcontainer #down-btn a{
-       left: 85%;
+       left: 78vw;
 }
 
 .footerSubcontainer span a:hover{
@@ -653,24 +655,36 @@ footer p{
 /*------MQ Banner------*/
 
   header .banner-container{
- background-position: 65% 60%;    
-}
+    background-position: 65% 60%;    
+  }
 
-#animated-text{
-  margin-top: 1.5em;
-  font-weight: 500;
-  font-size: 1.3em;
-}
+  #animated-text{
+     margin-top: 1.5em;
+    font-weight: 500;
+      font-size: 1.3em;
+  }
 
   .banner-text{
        font-size: .8em;
   }
 
+  .banner-text h1{
+    font-size: 1.8em;
+      margin-left: -1.5em;
+  }
+  
   .banner-text p{
-    font-size: 1.2em;
+    padding-left: 1.5em;
+       font-size: 1.2em;
+       margin: auto;
   }
 
   /*-------MQ Feature Categories Styling-------*/
+
+  .title hr{
+         width: 45%;
+  }
+
   .feature-categories-container{
     width: 75%;
    margin: auto;
@@ -693,6 +707,14 @@ footer p{
 
 
 /*-------MQ Feature Products Styling-------*/
+
+  .featured-products-container .title-sort{
+    padding-top: 1em;
+  }
+
+  .title-sort{
+    margin: 1.5em;
+  }
 
   .featured-products-container .grid-3{
                 display: grid;
@@ -727,6 +749,18 @@ footer p{
     padding: 0.5em;
     width: 100%;
   }
+
+
+  .allp-btn{
+    padding: 0.8em;
+}
+
+.allp-btn span{
+margin: 0.3em !important;
+padding: 0.4em 0.6em !important;
+}
+/*------- End MQ Feature Products Styling-------*/
+
 
 /*--------MQ Testimonials --------*/
   .testimonials-container{
@@ -795,8 +829,13 @@ footer p{
 
   .footer-social{
     width: 80%;
+    margin: auto;
   }
-  
+
+  .footer-div{
+    justify-content: center;
+  }
+
   .office-location{
     width: 100%;
     margin: auto;
@@ -825,18 +864,53 @@ footer p{
          width: 80%;
         margin: auto;
   }
+
+  .footerSubcontainer span a{
+      left: 80vw;
+  }
+
+  .footerSubcontainer #down-btn a{
+        left: 68vw;
+  }
+
 }
 
 
 /*-------- Mobile Phone Version----------*/
 @media (max-width: 550px) {
 
+  /* Banner Mobile Phone */
+  .banner-text p{
+    padding-left: 0.5em;
+       font-size: 1em;
+  }
+
+  #animated-text{
+    text-align: center;
+     font-size: 1.1em;
+ }
+
 /* Featured Products */
   .featured-products-container .grid-3{
 
-  grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
   }
+  
+  .title-sort{
+    flex-direction: column;
+    margin: 1.5em;
+  }
+/* End Featured Products */
+
+.footerSubcontainer span a{
+  left: 78vw;
+}
+
+.footerSubcontainer #down-btn a{
+    left: 65vw;
+}
+
 }
 
 /*-------- End Mobile Phone Version----------*/
