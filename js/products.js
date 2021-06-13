@@ -80,5 +80,9 @@ async () => {
     // This will display the products in the UI at runtime using the display function of the UI class
     // by recieving the products through the productobj as its parameter
 
-    ui.displayProducts(productsObj)
-})
+    ui.displayProducts(productsObj);
+});
+
+
+
+
