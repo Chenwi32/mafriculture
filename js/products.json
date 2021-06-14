@@ -1,88 +1,89 @@
 {
-    "status": "success",
-    "items": [{
-            "id": 1,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "./images/products/vase1.png"
-        },
-        {
-            "id": 2,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase2.png"
-        },
-        {
-            "id": 3,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase3.png"
-        },
-        {
-            "id": 4,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase4.png"
-        },
-        {
-            "id": 5,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase5.png"
-        },
-        {
-            "id": 6,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase6.png"
-        },
-        {
-            "id": 7,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase7.png"
-        },
-        {
-            "id": 8,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase8.png"
-        },
-        {
-            "id": 9,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase9.png"
-        },
-        {
-            "id": 10,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase10.png"
-        },
-        {
-            "id": 11,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/vase11.png"
-        },
-        {
-            "id": 12,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/exterior1.jpg"
-        },
-        {
-            "id": 13,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/exterior2.jpg"
-        },
-        {
-            "id": 13,
-            "title": "vase 1",
-            "price": 3000,
-            "image": "../images/products/exterior3.jpg"
-        }       
-    ]
+  "status": "success",
+  "items": [
+    {
+      "id": 1,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "./images/products/vase1.png"
+    },
+    {
+      "id": 2,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase2.png"
+    },
+    {
+      "id": 3,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/colection3.png"
+    },
+    {
+      "id": 4,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase4.png"
+    },
+    {
+      "id": 5,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase5.png"
+    },
+    {
+      "id": 6,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase6.png"
+    },
+    {
+      "id": 7,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase7.png"
+    },
+    {
+      "id": 8,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase8.png"
+    },
+    {
+      "id": 9,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase9.png"
+    },
+    {
+      "id": 10,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase10.png"
+    },
+    {
+      "id": 11,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/vase11.png"
+    },
+    {
+      "id": 12,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/exterior1.jpg"
+    },
+    {
+      "id": 13,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/exterior2.jpg"
+    },
+    {
+      "id": 13,
+      "title": "vase 1",
+      "price": 3000,
+      "image": "../images/products/exterior3.jpg"
+    }
+  ]
 }
