@@ -1,72 +1,102 @@
 /*-----------Cart items Styling------------*/
 
 .card-items-container {
-  width: 98%;
+  width: 100vw;
   margin: auto;
-  top: 0;
-  left: 2.5em;
+  top: 6em;
   position: fixed;
-  padding-top: 7em;
+  padding-top: 0.5em;
   z-index: 3;
   transition: all 300ms ease-in-out;
 }
 
 .td-container {
-  height: 90vh;
+  height: 80vh;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  /* color: ; */
+  padding: 0 0.5em;
+  font-size: 1em;
+  font-family: sans-serif;
+
+  padding: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid rgb(236, 31, 4);
+
+  overflow-y: scroll;
+
+  transition: all 300ms ease-in-out;
+}
+
+.close-cart {
+  position: absolute;
+  top: 0.5em;
+  left: 3.15em;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 0.1em 0.5em;
+
+  transition: all 300ms ease-in-out;
+
+  z-index: 110;
+}
+
+.close-cart:hover {
+  color: rgb(161, 3, 3);
+}
+
+.td-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(236, 31, 4);
+}
+
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.cart-item div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  background-color: rgba(236, 31, 4, 0.877);
-  width: 90%;
-  margin: auto;
-  color: white;
-  padding: 0.5em;
-  font-size: 1.5em;
-  font-family: sans-serif;
+  align-items: center;
 }
 
-td {
-  padding: 0.5em;
+.cart-item div span {
+  cursor: pointer;
 }
 
-td input {
-  padding: 0.4em;
-  background-color: inherit;
-  outline: none;
-  color: white;
-  font-size: 1em;
-  border: 1px solid white;
+.cart-item img {
+  width: 9.5rem;
+  height: 9.5rem;
 }
 
-td input:focus {
-  background-color: inherit;
-  outline: 2px white solid;
+.cart-item h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
-td:last-child {
-  text-align: right;
+.cart-item .price {
+  color: rgb(236, 31, 4);
+  font-weight: 700;
 }
 
-th:last-child {
-  text-align: right;
+.cart-item p {
+  color: rgb(236, 31, 4);
+  font-weight: 700;
 }
 
-.card-items-container table tr td input {
-  width: 40%;
-  margin: 1.5em;
-}
-th {
-  background-color: rgb(236, 31, 4);
-  padding: 0.5em;
+.cart-item .remove-item {
+  cursor: pointer;
 }
 
-.total-price {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.total-price table {
-  width: 450px;
+.cart-item .remove-item {
+  color: darkred;
 }
 
 .cart-overlay {
@@ -84,4 +114,39 @@ th {
   top: -100em;
 }
 
-/*-----------End Cart items Styling------------*/
+/*///////////////////////// End Cart items Styling /////////////////////*/
+
+/*///////////////////////////// Mobile Version /////////////////////////*/
+
+@media (max-width: 660px) {
+  .card-items-container table tr td input {
+    width: 60%;
+    padding: 0.5em;
+  }
+
+  td {
+    padding: 0.2em;
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+
+  th:last-child {
+    text-align: right;
+  }
+
+  th {
+    background-color: rgb(236, 31, 4);
+    padding: 0.5em;
+  }
+
+  .total-price {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .total-price table {
+    width: 100%;
+  }
+}

@@ -47,6 +47,7 @@
                 </li>
                 <li class="active"><a href="account.html">Account</a></li>
                 <div class="card1">
+                  <span class="number-items-incart">0</span>
                   <li>
                     <a class="cartBtn"
                       ><i class="fas fa-shopping-cart fa-1x"></i
@@ -67,67 +68,40 @@
         </div>
       </div>
     </header>
+    <div class="cart-overlay overlay-2 hide"></div>
     <!--------End Header-------->
 
     <main class="container">
       <!------ Cart ------->
-      <div class="cart-overlay hide"></div>
+      <div class="cart-overlay cart-overlay-1 hide"></div>
 
       <div class="card-items-container cartDisplay container hide">
         <div class="td-container">
-          <table>
-            <tr>
-              <th id="up">Product</th>
-              <th>Quantity</th>
-              <th>Subtotal</th>
-            </tr>
-            <tr>
-              <td>flower-vase1</td>
-              <td>
-                <input type="number" value="1" />
-              </td>
-              <td>20,000FCFA</td>
-            </tr>
+          <span class="close-cart"> X </span>
+          <h1>Your Cart</h1>
+          <div class="cart-centent">
+            <!-- Cart Item -->
+            <div class="cart-item">
+              <img src="./images/products/vase1.png" alt="" />
+              <div>
+                <h3>The Original Super Donut</h3>
+                <h3 class="price">$750</h3>
+              </div>
+              <div>
+                <span>^</span>
+                <p>3</p>
+                <span>V</span>
+              </div>
 
-            <tr>
-              <td>flower-vase2</td>
-              <td>
-                <input type="number" value="1" />
-              </td>
-              <td>20,000FCFA</td>
-            </tr>
+              <div>
+                <span class="remove-item"> delete </span>
+              </div>
+            </div>
+          </div>
 
-            <tr>
-              <td>flower-vase3</td>
-              <td>
-                <input type="number" value="1" />
-              </td>
-              <td>20,000FCFA</td>
-            </tr>
-
-            <tr>
-              <td>hot-designer-toghu-fashion-wear</td>
-              <td>
-                <input type="number" value="1" />
-              </td>
-              <td>15,000FCFA</td>
-            </tr>
-          </table>
-          <div class="total-price">
-            <table>
-              <tr>
-                <td>Subtotal</td>
-                <td>75,000FCFA</td>
-              </tr>
-              <tr>
-                <td>Tax</td>
-                <td>1,000FCFA</td>
-              </tr>
-              <tr>
-                <td>Total</td>
-                <td>76,000FCFA</td>
-              </tr>
-            </table>
+          <div class="cart-footer">
+            <h3>Total: $ <span class="cart-total">0</span></h3>
+            <button class="clear-cart btn">Clear Cart</button>
           </div>
         </div>
       </div>

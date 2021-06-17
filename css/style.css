@@ -80,7 +80,16 @@ header {
 }
 
 .card1 {
+  position: relative;
   transition: 0.7s;
+}
+.card1 span {
+  padding: 0.05em 0.3em;
+  position: absolute;
+  color: white;
+  background-color: rgb(255, 76, 6);
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .card1:hover {
@@ -695,48 +704,6 @@ footer p {
     height: 450px;
   }
 
-  /*-----------MQ Card items Styling------------*/
-
-  .card-items-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100%;
-    margin: auto;
-    padding-top: 3.5em;
-  }
-
-  .card-items-container table tr td input {
-    width: 60%;
-    padding: 0.5em;
-  }
-
-  td {
-    padding: 0.2em;
-  }
-
-  td:last-child {
-    text-align: right;
-  }
-
-  th:last-child {
-    text-align: right;
-  }
-
-  th {
-    background-color: rgb(236, 31, 4);
-    padding: 0.5em;
-  }
-
-  .total-price {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .total-price table {
-    width: 100%;
-  }
-
   /*-------MQ Footer-------*/
 
   /*-------- Footer MQ */
@@ -830,3 +797,7 @@ footer p {
 }
 
 /*-------- End Mobile Phone Version----------*/
+
+.overlay-2 {
+  z-index: 4;
+}
